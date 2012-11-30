@@ -1,0 +1,26 @@
+[alias]
+  co = checkout
+  st = status
+  ci = commit
+  commush = !git commit -a && git push
+  cu = !git commit -a && git push
+  df = !git diff --no-prefix && git diff --staged --no-prefix
+  clear = reset --hard
+  pull-recursive = !git pull && git submodule update --init
+  stache = !echo "Waxing and twirling..." && echo && git stash $@
+  loll = log --graph --decorate --pretty=oneline --abbrev-commit
+  lol = !git --no-pager loll
+  lolal = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  lola = !git --no-pager lolal
+[color]
+  ui = auto
+[push]
+  default = tracking
+[user]
+	name = Mason Wendell
+	email = mason@canarypromo.com
+
+[mergetool]
+	keepBackup = true
+[credential]
+	helper = osxkeychain
