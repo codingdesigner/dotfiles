@@ -86,18 +86,9 @@ alias sb='subl'
 # switch sublime to presentation mode and back
 alias present-mode='cd ~/Dropbox/sync/Sublime/Packages/User ; git co present ; cd ~/Dropbox/sync/Sublime/Packages/Theme\ -\ Soda ; git co present'
 alias normal-mode='cd ~/Dropbox/sync/Sublime/Packages/User ; git co master ; cd ~/Dropbox/sync/Sublime/Packages/Theme\ -\ Soda ; git co master'
+alias subl-settings='cd ~/Dropbox/sync/Sublime/Packages/User'
 
 # Virtual Box
-## mrsharris
-alias smh='VBoxManage startvm mrsharris -type=headless'
-alias qmh='VBoxManage controlvm mrsharris savestate'
-alias mmh='mount -t nfs 192.168.56.120:/var/www /Users/mason/devvm-www/'
-alias sshmh='ssh mrsharris'
-## Hermione
-alias sh='VBoxManage startvm hermione -type=headless'
-alias qh='VBoxManage controlvm hermione savestate'
-alias mh='mount -t nfs 33.33.33.34:/var/www /Users/mason/dwww/'
-alias sshh='ssh hermione'
 ## dev-vm-1.0
 alias svm='VBoxManage startvm vm -type=headless'
 alias qvm='VBoxManage controlvm vm savestate'
