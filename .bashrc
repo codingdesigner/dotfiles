@@ -104,7 +104,7 @@ alias skbuild="compass install survivalkit"
 alias skbuilddrupal="compass install survivalkit/drupal"
 alias skbuildclean="compass install survivalkit/clean"
 alias skreset='rm .htaccess ; rm -rf .sass-cache/ ; rm 404.html ; rm apple-touch-icon.png ; rm apple-touch-icon-114x114-precomposed.png ; rm apple-touch-icon-72x72-precomposed.png ; rm crossdomain.xml ; rm -rf css/ ; rm favicon.ico ; rm humans.txt ; rm index.html ; rm -rf js/ ; rm robots.txt ; rm -rf sass/ ; rm -rf images/ ; rm -rf fonts/ ; rm -rf survivalkit/ &'
-alias skcreate='compass create kit -r survivalkit -u survivalkit --javascripts-dir js --css-dir css --syntax sass'
+alias skcreate='compass create kit -r survivalkit -u survivalkit --javascripts-dir js --css-dir css --fonts-dir fonts --syntax sass'
 
 # Ubuntu server
 alias mus='mount -t nfs 192.168.1.142:/home/mason /Users/mason/ubuntu-server/'
