@@ -43,7 +43,7 @@ alias compress='tar -zcvf'
 alias compressfolders='for i in `ls -d *`; do tar -zcvf $i.tar.gz $i; done'
 alias uncompress='tar -zxvf'
 alias unspace='for FILE in * ; do NEWFILE=`echo $FILE | sed "s/ /_/g"` ; mv "$FILE" $NEWFILE ; done'
-alias fixgray='killall Dock'
+alias killdock='killall Dock'
 
 
 # SSH
