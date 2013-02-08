@@ -17,7 +17,7 @@ alias bcwd='bundle exec compass watch --debug-info'
 alias bccf='bundle exec compass compile --force'
 alias bccfd='bundle exec compass compile --force --debug-info'
 
-alias drush='php /usr/local/bin/drush/drush.php -i /usr/local/bin/drush_make'
+alias drush='/Applications/MAMP/bin/php/php5.3.14/bin/drush'
 # alias cdcompass='cd `compass --install-dir`'
 # alias opencompass='open `compass --install-dir`'
 alias cdcompass='cd /Library/Ruby/Gems/1.8/gems/compass-0.10.0'
