@@ -14,13 +14,14 @@
   lola = !git --no-pager lolal
 [color]
   ui = auto
+  sh = auto
 [push]
   default = tracking
 [user]
-	name = Mason Wendell
-	email = mason@canarypromo.com
+  name = Mason Wendell
+  email = mason@canarypromo.com
 
 [mergetool]
-	keepBackup = true
+  keepBackup = true
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
