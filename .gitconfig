@@ -12,6 +12,7 @@
   lol = !git --no-pager loll
   lolal = log --graph --decorate --pretty=oneline --abbrev-commit --all
   lola = !git --no-pager lolal
+  pum = pull upstream master
 [color]
   ui = auto
   sh = auto
