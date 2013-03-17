@@ -13,14 +13,15 @@
   lolal = log --graph --decorate --pretty=oneline --abbrev-commit --all
   lola = !git --no-pager lolal
   pum = pull upstream master
+  pum = pull upstream dev
 [color]
   ui = auto
   sh = auto
 [push]
   default = tracking
 [user]
-  name = Mason Wendell
-  email = mason@canarypromo.com
+	name = Mason Wendell
+	email = mason@canarypromo.com
 
 [mergetool]
   keepBackup = true
