@@ -3,7 +3,7 @@ alias bashrc='subl ~/.bashrc'
 # alias drush='php /Users/mason/Documents/Dev/drupalfiles/modules/6.x/drush/drush.php -i /Users/mason/Documents/Dev/drupalfiles/modules/6.x/drush_make'
 
 # resource bash from this file
-alias resource='source ~/.bashrc'
+alias resource='source ~/.bash_profile'
 
 alias ll='ls -la'
 
@@ -39,6 +39,8 @@ alias xref='xrefresh-server'
 alias xs='xrefresh-server'
 alias lr='livereload'
 alias bitch='say -v cellos "Paul mecurio is a whiny bitch whiny bitch H B O gave him a show and he blew it douche bag"'
+alias whatsthetime='say `date "+%l %M and %S seconds"`'
+alias nowhatsthetime='say "its time to get ill"'
 alias compress='tar -zcvf'
 alias compressfolders='for i in `ls -d *`; do tar -zcvf $i.tar.gz $i; done'
 alias uncompress='tar -zxvf'
