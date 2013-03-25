@@ -111,6 +111,8 @@ alias skcreate='compass create kit -r survivalkit -u survivalkit --javascripts-d
 # Ubuntu server
 alias mus='mount -t nfs 192.168.1.142:/home/mason /Users/mason/ubuntu-server/'
 
+# NBC Projects
+alias usa_new='drush psi ent -y ; upwd ; cca ; drush en usanetwork_core -y ; drush en usanetwork_devel -y ; cca ; drush updb ; drush cc drush ; drush fra --force -y'
 
 # my alias's (for vm's)
 # Drush
