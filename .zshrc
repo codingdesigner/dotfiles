@@ -195,3 +195,7 @@ alias resetnetwork='sudo ifdown eth0 ; sudo ifup eth0'
 alias telesp='cd ~/www/nbc/telemundo/sp/Telemundo_style-prototype'
 alias teledr='cd ~/www/nbc/telemundo/drupal/Publisher7/docroot/sites/nbcutelemundo'
 alias oxy='cd ~/www/nbc/nbcuoxy/docroot/sites/nbcuoxy'
+
+# Canary project paths
+alias candr='cd ~/www/canarypromo/canary2013/docroot/sites/all'
+alias cansp='cd ~/www/canarypromo/canary-promotion'
