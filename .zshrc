@@ -39,8 +39,20 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/local/bin:/usr/local/sbin:/Users/mason/bin:/usr/local/mysql/bin:/Applications/MAMP/Library/bin:/Users/mason/.gem/ruby/1.8/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/local/bin:/usr/local/sbin:/Users/mason/bin:/usr/local/mysql/bin:/Applications/MAMP/Library/bin:/Users/mason/.gem/ruby/1.8/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
-
+path+=/usr/local/bin
+path+=/usr/bin
+path+=/bin
+path+=/usr/sbin
+path+=/sbin
+path+=/usr/local/git/bin
+path+=/usr/local/sbin
+path+=/Users/mason/bin
+path+=/usr/local/mysql/bin
+path+=/Applications/MAMP/Library/bin
+path+=/Users/mason/.gem/ruby/1.8/bin
+path=($^path(N))
+export path
+export GEM_HOME=$(brew --prefix)
 export DRUSH_PHP="/Applications/MAMP/bin/php/php5.3.20/bin/php"
 
 ###### ALIASES ######
@@ -160,6 +172,7 @@ alias mus='mount -t nfs 192.168.1.142:/home/mason /Users/mason/ubuntu-server/'
 
 # NBC Projects
 alias usa_new='drush psi ent -y ; upwd ; cca ; drush en usanetwork_core -y ; drush en usanetwork_devel -y ; cca ; drush updb ; drush cc drush ; drush fra --force -y'
+alias oxy_new='drush psi vanilla -y ; drush cc all ; drush en nbcuoxy -y ; drush en nbcuoxy_devel -y ; drush updb ; drush cc drush ; drush fra -y ; drush cc all ; drush upwd admin --password="pa55word"'
 
 # my alias's (for vm's)
 # Drush
@@ -172,6 +185,13 @@ alias themeroff='drush dis devel_themer -y'
 alias cca='drush cc all'
 alias comprache_off='drush vset --yes cache "0" ; drush vset --yes page_compression "0" ; drush vset --yes preprocess_css "0" ; drush vset --yes preprocess_js "0"'
 alias comprache_on='drush vset --yes cache "1" ; drush vset --yes page_compression "1" ; drush vset --yes preprocess_css "1" ; drush vset --yes preprocess_js "1"'
+alias aggregate_off='drush vset --yes preprocess_css "0" ; drush vset --yes preprocess_js "0"'
+alias aggregate_on='drush vset --yes preprocess_css "1" ; drush vset --yes preprocess_js "1"'
 alias 311='drush webadmin@marge.zivtech.com/var/www/extranet/code/webroot 311'
 # networking
 alias resetnetwork='sudo ifdown eth0 ; sudo ifup eth0'
+
+# NBC project paths
+alias telesp='cd ~/www/nbc/telemundo/sp/Telemundo_style-prototype'
+alias teledr='cd ~/www/nbc/telemundo/drupal/Publisher7/docroot/sites/nbcutelemundo'
+alias oxy='cd ~/www/nbc/nbcuoxy/docroot/sites/nbcuoxy'

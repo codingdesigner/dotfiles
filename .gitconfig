@@ -25,8 +25,20 @@
 	email = mason@canarypromo.com
 
 [mergetool]
-  keepBackup = true
+	keepBackup = true
+	prompt = false
 [credential]
   helper = osxkeychain
 [core]
 	excludesfile = /Users/Mason/.gitignore-global
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[diff]
+	tool = FileMerge
+[difftool]
+	prompt = false
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true
+[merge]
+	tool = FileMerge

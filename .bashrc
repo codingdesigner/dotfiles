@@ -126,6 +126,10 @@ alias themeroff='drush dis devel_themer -y'
 alias cca='drush cc all'
 alias comprache_off='drush vset --yes cache "0" ; drush vset --yes page_compression "0" ; drush vset --yes preprocess_css "0" ; drush vset --yes preprocess_js "0"'
 alias comprache_on='drush vset --yes cache "1" ; drush vset --yes page_compression "1" ; drush vset --yes preprocess_css "1" ; drush vset --yes preprocess_js "1"'
+alias aggregate_off='drush vset --yes preprocess_css "0" ; drush vset --yes preprocess_js "0"'
+alias aggregate_on='drush vset --yes preprocess_css "1" ; drush vset --yes preprocess_js "1"'
 alias 311='drush webadmin@marge.zivtech.com/var/www/extranet/code/webroot 311'
 # networking
 alias resetnetwork='sudo ifdown eth0 ; sudo ifup eth0'
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
