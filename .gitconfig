@@ -9,12 +9,11 @@
   clear = reset --hard
   pull-recursive = !git pull && git submodule update --init
   stache = !echo "Waxing and twirling..." && echo && git stash $@
+  tree = log --graph --decorate --pretty=oneline --abbrev-commit
   loll = log --graph --decorate --pretty=oneline --abbrev-commit
   lol = !git --no-pager loll
   lolal = log --graph --decorate --pretty=oneline --abbrev-commit --all
   lola = !git --no-pager lolal
-  pum = pull upstream master
-  pum = pull upstream dev
 [color]
   ui = auto
   sh = auto
@@ -30,7 +29,7 @@
 [credential]
   helper = osxkeychain
 [core]
-	excludesfile = /Users/Mason/.gitignore-global
+	excludesfile = /Users/mason/.gitignore_global
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [diff]

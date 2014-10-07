@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+ZSH_THEME="agnoster-mason"
 
 DEFAULT_USER="Mason"
 
@@ -55,15 +55,18 @@ source $ZSH/oh-my-zsh.sh
 
 #export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # Customize to your needs...
+path=/usr/local/bin
 path+=/usr/bin
 path+=/bin
 path+=/usr/sbin
 path+=/sbin
-path+=/usr/local/bin
+path+=/Applications/MAMP/Library/bin
+path+=$HOME/bin
+path+=$HOME/.rvm/bin
 path=($^path(N))
 export path
 export GEM_HOME=$(brew --prefix)
-export DRUSH_PHP="/Applications/MAMP/bin/php/php5.3.20/bin/php"
+export DRUSH_PHP="/Applications/MAMP/bin/php/php5.5.14/bin/php"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
@@ -81,3 +84,5 @@ export DRUSH_PHP="/Applications/MAMP/bin/php/php5.3.20/bin/php"
 
 # Aliases
 . ~/.alias
+
+# PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
