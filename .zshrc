@@ -66,8 +66,13 @@ path+=$HOME/.rvm/bin
 path=($^path(N))
 export path
 export GEM_HOME=$(brew --prefix)
-export DRUSH_PHP="/Applications/MAMP/bin/php/php5.5.14/bin/php"
+export DRUSH_PHP="/Applications/MAMP/bin/php/php5.5.18/bin/php"
 # export MANPATH="/usr/local/man:$MANPATH"
+
+# Support for docker machine
+eval "$(~/Projects/_devtools_vm/bin/config.sh)"
+
+
 
 # # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then

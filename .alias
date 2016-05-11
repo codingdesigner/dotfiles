@@ -128,6 +128,14 @@ alias comprache_on='drush vset --yes cache "1" ; drush vset --yes page_compressi
 alias aggregate_off='drush vset --yes preprocess_css "0" ; drush vset --yes preprocess_js "0"'
 alias aggregate_on='drush vset --yes preprocess_css "1" ; drush vset --yes preprocess_js "1"'
 
+# Drush in docker
+ddrush () {
+  docker-compose -f build.yml run drush "$@";
+}
+
 # Canary project paths
 alias candr='cd ~/www/canarypromo/canary2013/docroot/sites/all'
 alias cansp='cd ~/www/canarypromo/canary-promotion'
+
+# Coding Designer
+alias tcd_deploy='cp -r dest dist && cp -r bower_components dist && cp -r src/images dist/src && cp -r src/js dist/src && git add dist/ && git ci -m "prepare dist" && git subtree push --prefix dist origin gh-pages'
