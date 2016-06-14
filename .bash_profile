@@ -14,5 +14,3 @@ export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:$PATH"
 
 export DRUSH_PHP="/Applications/MAMP/bin/php/php5.3.20/bin/php"
-
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

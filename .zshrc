@@ -62,7 +62,6 @@ path+=/usr/sbin
 path+=/sbin
 path+=/Applications/MAMP/Library/bin
 path+=$HOME/bin
-path+=$HOME/.rvm/bin
 path=($^path(N))
 export path
 export GEM_HOME=$(brew --prefix)
@@ -89,5 +88,3 @@ eval "$(~/Projects/_devtools_vm/bin/config.sh)"
 
 # Aliases
 . ~/.alias
-
-# PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
