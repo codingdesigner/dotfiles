@@ -62,6 +62,7 @@ path+=/usr/sbin
 path+=/sbin
 path+=/Applications/MAMP/Library/bin
 path+=$HOME/bin
+path+=/usr/local/sbin
 path=($^path(N))
 export path
 export GEM_HOME=$(brew --prefix)
@@ -69,7 +70,9 @@ export DRUSH_PHP="/Applications/MAMP/bin/php/php5.5.18/bin/php"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # Support for docker machine
-eval "$(~/Projects/_devtools_vm/bin/config.sh)"
+# eval "$(docker-machine env -u)"
+# eval "$(docker-machine env dev)"
+eval "$(devtools config)"
 
 
 
