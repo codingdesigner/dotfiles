@@ -130,7 +130,7 @@ alias aggregate_on='drush vset --yes preprocess_css "1" ; drush vset --yes prepr
 
 # Phase2
 alias devtools-config='eval "$(devtools config)"'
-alias devtools-env='eval "$(docker-machine env default)"'
+alias devtools-env='eval "$(docker-machine env dev)"'
 alias devtools-reset-container='docker-compose stop www && docker-compose rm -f www && docker-compose up -d www'
 
 # Drush in docker
