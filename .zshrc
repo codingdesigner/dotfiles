@@ -60,21 +60,14 @@ path+=/usr/bin
 path+=/bin
 path+=/usr/sbin
 path+=/sbin
-path+=/Applications/MAMP/Library/bin
+# path+=/Applications/MAMP/Library/bin
 path+=$HOME/bin
 path+=/usr/local/sbin
+# path+=$(brew --prefix homebrew/php/php56)/bin
 path=($^path(N))
 export path
 export GEM_HOME=$(brew --prefix)
-export DRUSH_PHP="/Applications/MAMP/bin/php/php5.5.18/bin/php"
 # export MANPATH="/usr/local/man:$MANPATH"
-
-# Support for docker machine
-# eval "$(docker-machine env -u)"
-# eval "$(docker-machine env dev)"
-eval "$(devtools config)"
-
-
 
 # # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -91,3 +84,12 @@ eval "$(devtools config)"
 
 # Aliases
 . ~/.alias
+
+export NVM_DIR="/Users/mason/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+# export PATH="$PATH:$HOME/.rvm/bin"
+
+source $(brew --prefix nvm)/nvm.sh
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

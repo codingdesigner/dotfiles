@@ -1,10 +1,11 @@
 ###### ALIASES ######
 alias bashrc='subl ~/.bashrc'
 
-# alias drush='php /Users/mason/Documents/Dev/drupalfiles/modules/6.x/drush/drush.php -i /Users/mason/Documents/Dev/drupalfiles/modules/6.x/drush_make'
-
 # resource bash from this file
 alias resource='source ~/.zshrc'
+
+alias drush='DRUSH_PHP=/usr/local/bin/php /usr/local/bin/drush'
+# alias ddrush='docker-compose -f build.yml run drush '
 
 alias ll='ls -la'
 
