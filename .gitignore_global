@@ -3,3 +3,4 @@
 .idea
 .idea/*
 node_modules
+.vscode
