@@ -96,3 +96,5 @@ export NVM_DIR="/Users/mason/.nvm"
 
 source $(brew --prefix nvm)/nvm.sh
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+eval $(thefuck --alias)
