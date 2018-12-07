@@ -53,6 +53,10 @@ alias cansp='cd ~/www/canarypromo/canary-promotion'
 alias git-prune='git branch --merged | grep -v "\*" | grep -v master | grep -v dev | xargs -n 1 git branch -d'
 alias gfa='git fetch --all'
 alias gmom='git merge origin/master'
+alias gb='git branch | cat'
+alias grpo='git remote prune origin'
+alias g-clean-branches="git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -d"
+# http://erikaybar.name/git-deleting-old-local-branches/
 
 # Coding Designer
 alias tcd_deploy='rm -rf dist/*    &&  cp -r dest/pattern-lab/patterns/(03-pages)*/*(.html)* dist   &&  rm dist/index.html && rm dist/*(.escaped.html)*   &&  mv dist/03-pages-00-home.html dist/index.html  &&  cp dest/*.png dist  &&  cp dest/*.ico dist  &&  cp dest/(icons)* dist  &&  cp dest/*.json dist  &&  cp dest/*.svg dist  &&  cp dest/(script)* dist  &&  cp dest/(style)* dist  &&  cp -r dest/pattern-lab/styleguide dist  &&  cp -r bower_components dist   &&  mkdir dist/src  &&  cp -r src/images dist/src/images   &&  cp -r src/js dist/src  &&  sed -i ""  "s/..\/..\/..\/..\///g" dist/*.html  &&  sed -i ""  "s/..\/..\///g" dist/*.html  &&  sed -i ""  "s/dest\/style.css/style.css/g" dist/*.html  &&  sed -i ""  "s/dest\/script.js/script.js/g" dist/*.html  &&  sed -i ""  "s/..&#x2F;..&#x2F;..&#x2F;..&#x2F;//g" dist/*.html  &&  sed -i ""  "s/..\/..&#x2F;patterns&#x2F;03-pages-\(.*\)&#x2F;//g" dist/*.html  &&  sed -i ""  "s/Pattern Lab Pattern/Mason Wendell - The Coding Designer/g" dist/*.html &&  sed -i ""  "s/03-pages-00-home.html/index.html/g" dist/*.html  &&  sed -i "" "s/..\/src/src/g" dist/*.css && sed -i "" "s/linkedin.cmasonwendell/linkedin.com\/in\/masonwendell/g" dist/*.html && mkdir dist/support  &&  cp -r dest dist/support  &&  cp -r bower_components dist/support  &&  mkdir dist/support/src  &&  cp -r src/images dist/support/src  &&  cp -r src/js dist/support/src  &&  git add dist/   && git ci -m "prepare dist"   &&  git subtree push --prefix dist origin gh-pages'
