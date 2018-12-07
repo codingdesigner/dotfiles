@@ -4,6 +4,8 @@ alias bashrc='subl ~/.bashrc'
 # resource bash from this file
 alias resource='source ~/.zshrc'
 
+alias allalias='cat ~/Documents/dotfiles/.alias'
+
 alias ll='ls -la'
 
 alias dotfind='find . -type f -name ._*'
