@@ -56,9 +56,23 @@ alias git-prune='git branch --merged | grep -v "\*" | grep -v master | grep -v d
 alias gfa='git fetch --all'
 alias gmom='git merge origin/master'
 alias gb='git branch | cat'
+alias gbc="git for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'"
 alias grpo='git remote prune origin'
 alias g-clean-branches="git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -d"
 # http://erikaybar.name/git-deleting-old-local-branches/
+
+function ggg() {
+  green=$(tput setaf 2)
+  normal=$(tput sgr0)
+  printf "${green}git-prune${normal} - \"prune merged branches\" \n"
+  printf "${green}gfa${normal} - \"fetch all\" \n"
+  printf "${green}gmom${normal} - \"merge origin/master\" \n"
+  printf "${green}gb${normal} - \"list local branches\" \n"
+  printf "${green}gbc${normal} - \"list local branches sorted by last commit\" \n"
+  printf "${green}grpo${normal} - \"remote prune origin\" \n"
+  printf "${green}g-clean-branches${normal} - \"delete old local branches\" \n"
+}
+
 
 # NPM
 alias nn='npm run'
