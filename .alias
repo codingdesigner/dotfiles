@@ -75,7 +75,7 @@ function ggg() {
 
 
 # NPM
-alias nn='npm run'
+alias nn='time npm run'
 
 # VERSO
 function sstorybook() {
