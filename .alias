@@ -55,6 +55,7 @@ alias cansp='cd ~/www/canarypromo/canary-promotion'
 alias git-prune='git branch --merged | grep -v "\*" | grep -v master | grep -v dev | xargs -n 1 git branch -d'
 alias gfa='git fetch --all'
 alias gmom='git merge origin/master'
+alias grom='git rebase origin/master'
 alias gb='git branch | cat'
 alias gbc="git for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'"
 alias grpo='git remote prune origin'
@@ -67,6 +68,7 @@ function ggg() {
   printf "${green}git-prune${normal} - prune merged branches \n"
   printf "${green}gfa${normal} - fetch all \n"
   printf "${green}gmom${normal} - merge origin/master \n"
+  printf "${green}grom${normal} - rebase origin/master \n"
   printf "${green}gb${normal} - list local branches \n"
   printf "${green}gbc${normal} - list local branches sorted by last commit \n"
   printf "${green}grpo${normal} - remote prune origin \n"
