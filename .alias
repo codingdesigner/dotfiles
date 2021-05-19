@@ -59,7 +59,8 @@ alias grom='git rebase origin/master'
 alias gb='git branch | cat'
 alias gbc="git for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'"
 alias grpo='git remote prune origin'
-alias g-clean-branches="git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -D"
+alias g-clean-branches="git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -d"
+alias g-clean-branches-hard="git branch -vv | grep 'origin/.*: gone]' | awk '{print $1}' | xargs git branch -D"
 # http://erikaybar.name/git-deleting-old-local-branches/
 
 function ggg() {
@@ -73,6 +74,7 @@ function ggg() {
   printf "${green}gbc${normal} - list local branches sorted by last commit \n"
   printf "${green}grpo${normal} - remote prune origin \n"
   printf "${green}g-clean-branches${normal} - delete old local branches \n"
+  printf "${green}g-clean-branches-hard${normal} - force delete old local branches \n"
 }
 
 
