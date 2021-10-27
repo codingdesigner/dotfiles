@@ -21,8 +21,8 @@
 [push]
   default = tracking
 [user]
-	name = Mason Wendell
-	email = mason@thecodingdesigner.com
+	name = Mae Wendell
+	email = mae@thecodingdesigner.com
 
 [mergetool]
 	keepBackup = true
