@@ -7,7 +7,7 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME=""
 
-DEFAULT_USER="Mason"
+DEFAULT_USER="Mae"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -88,7 +88,7 @@ export GEM_HOME=$(brew --prefix)
 # Aliases
 . ~/.alias
 
-export NVM_DIR="/Users/mason/.nvm"
+export NVM_DIR="/Users/mae/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.

@@ -1,6 +1,6 @@
 alias bashrc='subl ~/.bashrc'
 
-# alias drush='php /Users/mason/Documents/Dev/drupalfiles/modules/6.x/drush/drush.php -i /Users/mason/Documents/Dev/drupalfiles/modules/6.x/drush_make'
+# alias drush='php /Users/mae/Documents/Dev/drupalfiles/modules/6.x/drush/drush.php -i /Users/mae/Documents/Dev/drupalfiles/modules/6.x/drush_make'
 
 # resource bash from this file
 alias resource='source ~/.bash_profile'
