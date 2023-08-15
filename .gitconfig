@@ -21,8 +21,8 @@
 [push]
   default = tracking
 [user]
-	name = Mae Wendell
-	email = mae@thecodingdesigner.com
+	name = Gwen Wendell
+	email = gwen@thecodingdesigner.com
 
 [mergetool]
 	keepBackup = true
@@ -48,3 +48,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[init]
+	defaultBranch = main
