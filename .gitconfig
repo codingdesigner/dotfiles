@@ -30,7 +30,7 @@
 [credential]
   helper = osxkeychain
 [core]
-	excludesfile = /Users/mae/.gitignore_global
+	excludesfile = /Users/gwendy/.gitignore_global
   ignorecase = false
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
