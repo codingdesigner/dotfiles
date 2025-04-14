@@ -6,8 +6,8 @@ unset file
 
 HISTFILESIZE=1000000000 HISTSIZE=1000000
 
-export PATH="/Users/gwendy/.gem/ruby/1.8/bin:$PATH"
-export PATH="/Applications/MAMP/Library/bin:$PATH"
+# export PATH="/Users/gwendy/.gem/ruby/1.8/bin:$PATH"
+# export PATH="/Applications/MAMP/Library/bin:$PATH"
 export PATH="/usr/local/mysql/bin:$PATH"
 export PATH="/Users/gwendy/bin:$PATH"
 # export PATH="/Applications/MAMP/bin/php/php5.4.10/bin:$PATH"

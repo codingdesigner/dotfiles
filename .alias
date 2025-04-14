@@ -29,27 +29,27 @@ alias killdock='killall Dock'
 
 
 # SSH
-alias canssh='ssh canarypr@canarypromo.com'
-alias marsalisssh='ssh marsalis@marsalismusic.com'
-alias chillingssh='ssh chilling@72.250.241.51'
-alias webenabledssh='ssh w_zivtec@zivtec.dev3.webenabled.net'
+# alias canssh='ssh canarypr@canarypromo.com'
+# alias marsalisssh='ssh marsalis@marsalismusic.com'
+# alias chillingssh='ssh chilling@72.250.241.51'
+# alias webenabledssh='ssh w_zivtec@zivtec.dev3.webenabled.net'
 
 # edit the hosts file
-alias edithosts='sudo subl /private/etc/hosts'
+# alias edithosts='sudo subl /private/etc/hosts'
 # copy the current directory to the clipboard
 alias cpdir='pwd | pbcopy'
 
 # more natural shortcut for opening Sublime Text 2
-alias sb='subl'
+# alias sb='subl'
 
 # switch sublime to presentation mode and back
-alias present-mode='cd ~/Dropbox/sync/Sublime/Packages/User ; git co present ; cd ~/Dropbox/sync/Sublime/Packages/Theme\ -\ Soda ; git co present'
-alias normal-mode='cd ~/Dropbox/sync/Sublime/Packages/User ; git co master ; cd ~/Dropbox/sync/Sublime/Packages/Theme\ -\ Soda ; git co master'
-alias subl-settings='cd ~/Dropbox/sync/Sublime/Packages/User'
+# alias present-mode='cd ~/Dropbox/sync/Sublime/Packages/User ; git co present ; cd ~/Dropbox/sync/Sublime/Packages/Theme\ -\ Soda ; git co present'
+# alias normal-mode='cd ~/Dropbox/sync/Sublime/Packages/User ; git co master ; cd ~/Dropbox/sync/Sublime/Packages/Theme\ -\ Soda ; git co master'
+# alias subl-settings='cd ~/Dropbox/sync/Sublime/Packages/User'
 
 # Canary project paths
-alias candr='cd ~/www/canarypromo/canary2013/docroot/sites/all'
-alias cansp='cd ~/www/canarypromo/canary-promotion'
+# alias candr='cd ~/www/canarypromo/canary2013/docroot/sites/all'
+# alias cansp='cd ~/www/canarypromo/canary-promotion'
 
 # Git
 alias git-prune='git branch --merged | grep -v "\*" | grep -v main | grep -v dev | xargs -n 1 git branch -d'
@@ -82,35 +82,35 @@ function ggg() {
 alias nn='time npm run'
 
 # VERSO
-function sstorybook() {
-  if [ -z "$1" ]
-  then
-    echo "BI=vogue npm run storybook"
-    eval "BI=vogue npm run storybook"
-  else
-    echo "BI=$1 npm run storybook"
-    eval "BI=$1 npm run storybook"
-  fi
-}
+# function sstorybook() {
+#   if [ -z "$1" ]
+#   then
+#     echo "BI=vogue npm run storybook"
+#     eval "BI=vogue npm run storybook"
+#   else
+#     echo "BI=$1 npm run storybook"
+#     eval "BI=$1 npm run storybook"
+#   fi
+# }
 
-function vverso() {
-  if [ -z "$1" ]
-  then
-    echo "BI=vogue npm run dev-reload"
-    eval "BI=vogue npm run dev-reload"
-  else
-    echo "BI=$1 npm run dev-reload"
-    eval "BI=$1 npm run dev-reload"
-  fi
-}
+# function vverso() {
+#   if [ -z "$1" ]
+#   then
+#     echo "BI=vogue npm run dev-reload"
+#     eval "BI=vogue npm run dev-reload"
+#   else
+#     echo "BI=$1 npm run dev-reload"
+#     eval "BI=$1 npm run dev-reload"
+#   fi
+# }
 
-function vvv() {
-  green=$(tput setaf 2)
-  normal=$(tput sgr0)
-  printf "${green}nn${normal} - npm run \n 'nn dev', 'nn dev-reload', 'nn tdd', 'nn storybook' \n"
-  printf "${green}sstorybook${normal} - BI=\$1 npm run storybook (defaults to vogue)\n"
-  printf "${green}vverso${normal} - BI=\$1 npm run dev-reload (defaults to vogue)\n"
-}
+# function vvv() {
+#   green=$(tput setaf 2)
+#   normal=$(tput sgr0)
+#   printf "${green}nn${normal} - npm run \n 'nn dev', 'nn dev-reload', 'nn tdd', 'nn storybook' \n"
+#   printf "${green}sstorybook${normal} - BI=\$1 npm run storybook (defaults to vogue)\n"
+#   printf "${green}vverso${normal} - BI=\$1 npm run dev-reload (defaults to vogue)\n"
+# }
 
 
 # Coding Designer
